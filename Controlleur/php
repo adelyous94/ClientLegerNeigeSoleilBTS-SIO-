@@ -1,0 +1,7 @@
+<?php 
+
+session_start();
+require_once '../Controlleur/Controlleur.class.php';
+$lesContrats=$unControleur->selectAllContratDeReservation();
+
+require_once("vue.tableamodifier.php");

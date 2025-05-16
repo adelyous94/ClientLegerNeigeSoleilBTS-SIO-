@@ -1,0 +1,164 @@
+/* 🌄 STYLE GLOBAL */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../image/login.png'); /* Vérifie que l'image existe */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* 🔲 OVERLAY POUR ASSOMBRIR L'IMAGE */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* 🟦 CONTAINER DU FORMULAIRE */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 100px; /* Pour éviter que le formulaire ne soit caché par la navbar */
+}
+.background-overlay {
+    position: fixed; /* Change absolute en fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0; /* Assure-toi que ça ne cache pas la navbar */
+}
+
+}
+
+/* 🔤 HEADER DU FORMULAIRE */
+.login-header {
+    margin-bottom: 2rem;
+}
+
+.login-header .logo {
+    width: 100px;
+    margin-bottom: 1.5rem;
+}
+
+.login-header h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.login-header p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* 🏗️ FORMULAIRE */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/* 📑 LABELS */
+ .form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* 🖊️ INPUTS (email & mot de passe) */
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* ✨ STYLE AU FOCUS */
+ .form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* 🚫 FIX POUR L'AUTOCOMPLÉTION CHROME */
+input:-webkit-autofill {
+    background-color: transparent !important;
+    color: #333 !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/* 🔘 BOUTON DE CONNEXION */
+.btn-login{
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #9683EC;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-login:hover {
+    background-color: #800080;
+    transform: translateY(-2px);
+}
+
+/* 🔗 MOT DE PASSE OUBLIÉ */
+.forgot-password {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #9683EC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #800080;
+}
+
+/* 🔚 PIED DE PAGE */
+.login-footer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.login-footer a {
+    color: #9683EC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-footer a:hover {
+    color: #800080;
+}
